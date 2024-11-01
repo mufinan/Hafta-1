@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Bilgileri Formu</title>
+</head>
+<body>
+
+    <h1>Kullanıcı Bilgileri Formu</h1>
+
+    <form action="/submit" method="post">
+        <!-- Ad ve Soyad -->
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" name="ad" required>
+        <br><br>
+
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" name="soyad" required>
+        <br><br>
+
+        <!-- E-posta -->
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Parola -->
+        <label for="password">Parola:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <!-- Cinsiyet -->
+        <label>Cinsiyet:</label>
+        <input type="radio" id="erkek" name="cinsiyet" value="Erkek">
+        <label for="erkek">Erkek</label>
+
+        <input type="radio" id="kadin" name="cinsiyet" value="Kadın">
+        <label for="kadin">Kadın</label>
+        <br><br>
+
+        <!-- Favori Meyve -->
+        <label for="meyve">Favori Meyve:</label>
+        <select id="meyve" name="meyve">
+            <option value="Elma">Elma</option>
+            <option value="Muz">Muz</option>
+            <option value="Çilek">Çilek</option>
+            <option value="Portakal">Portakal</option>
+            <option value="Üzüm">Üzüm</option>
+        </select>
+        <br><br>
+
+        <!-- Mesaj -->
+        <label for="mesaj">Mesaj:</label><br>
+        <textarea id="mesaj" name="mesaj" rows="4" cols="50"></textarea>
+        <br><br>
+
+        <!-- Gönder Butonu -->
+        <button type="submit">Gönder</button>
+    </form>
+
+</body>
+</html>
